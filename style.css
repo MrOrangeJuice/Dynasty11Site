@@ -1,0 +1,143 @@
+body {
+	font-family: 'Heebo', sans-serif;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+li {
+	display: inline;
+}
+
+li a {
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+	font-size: 2em;
+	text-decoration: none;
+	transition-duration: 0.2s;
+}
+
+.home {
+	color: #f97f1c;
+	transition-duration: 0.2s;
+}
+
+.home:hover {
+	color: white;
+	transition-duration: 0.2s;
+}
+
+.homeReverse {
+	color: white;
+	transition-duration: 0.2s;
+}
+
+.about {
+	color: #ffca02;
+	transition-duration: 0.2s;
+}
+
+.about:hover {
+	color: white;
+	transition-duration: 0.2s;
+}
+
+.aboutReverse {
+	color: white;
+	transition-duration: 0.2s;
+}
+
+.games {
+	color: #53a273;
+	transition-duration: 0.2s;
+}
+
+.games:hover {
+	color: white;
+	transition-duration: 0.2s;
+}
+
+.gamesReverse {
+	color: white;
+	transition-duration: 0.2s;
+}
+
+.contact {
+	color: #a54686;
+	transition-duration: 0.2s;
+}
+
+.contact:hover {
+	color: white;
+	transition-duration: 0.2s;
+}
+
+.contactReverse {
+	color: white;
+	transition-duration: 0.2s;
+}
+
+#contactLink {
+	background-color: black;
+	color: white;
+	border: 3px solid white;
+	transition-duration: 0.2s;
+	font-size: 2em;
+	padding: 10px;
+}
+
+#contactLink:hover {
+	background-color: white;
+	color: black;
+	transition-duration: 0.2s;
+	cursor: pointer;
+}
+
+.socialMedia {
+	font-size: 2em;
+}
+
+#facebook {
+	color: white;
+	transition-duration: 0.1s;
+	margin-left: 5px;
+}
+
+#facebook:hover {
+	color: #3b5998;
+	transition-duration: 0.1s;
+}
+
+#twitter {
+	color: white;
+	transition-duration: 0.1s;
+	margin-right: 5px;
+}
+
+#twitter:hover {
+	color: #00acee;
+	transition-duration: 0.1s;
+}
+
+#logo {
+	width: 40%;
+	transition-duration: 0.2s;
+}
+
+@media (max-width: 1200px) {
+	#logo {
+		width: 70%;
+	}
+
+	#contactLink {
+		font-size: 1.5em;
+		border: 2px solid white;
+		padding: 5px;
+	}
+}
+
+@media (max-width: 600px) {
+	li a {
+		font-size: 1.5em;
+	}
+}
