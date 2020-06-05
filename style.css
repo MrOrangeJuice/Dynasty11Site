@@ -1,5 +1,10 @@
+@font-face {
+	font-family: 'RoyalCrescentdemo';
+	src: url('fonts/Royal Crescent Demo.otf');
+}
+
 body {
-	font-family: 'Heebo', sans-serif;
+	font-family: 'RoyalCrescentdemo';
 	background-color: black;
 	color: white;
 	text-align: center;
@@ -96,6 +101,7 @@ li a {
 	transition-duration: 0.2s;
 	font-size: 2em;
 	padding: 10px;
+	font-family: 'RoyalCrescentDemo';
 }
 
 .bigButton:hover {
