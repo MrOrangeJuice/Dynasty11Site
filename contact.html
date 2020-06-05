@@ -23,6 +23,27 @@
 	</nav>
 	<main>
 		<h1>Contact</h1>
+		<form class="contactForm" action="contactform.php" method="post">
+			<label for="name">Name: <span class="red">*</span></label>
+			<br>
+			<input type="text" name="name" placeholder="John Doe">
+			<br>
+			<label for="mail">Email: <span class="red">*</span></label>
+			<br>
+			<input type="text" name="mail" placeholder="example@gmail.com">
+			<br>
+			<label for="subject">Subject: <span class="red">*</span></label>
+			<br>
+			<input type="text" name="subject" placeholder="Enter your subject">
+			<br>
+			<label for="comment">Comment: <span class="red">*</span></label>
+			<br>
+			<textarea name="message" placeholder="Enter your comment"></textarea>
+			<br>
+			<br>
+			<button type="submit" name="Submit" class="bigButton">Submit</button>
+
+		</form>
 	</main>
 	<br>
 	<br>
