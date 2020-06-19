@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: 'Royal Crescent';
     src: url('../fonts/RoyalCrescent.woff2') format('woff2'),
@@ -7,6 +8,7 @@
     font-style: normal;
 }
 
+/* Base styles */
 :root{
 	font-family: 'Royal Crescent';
 	user-select:none;
@@ -15,6 +17,9 @@
 body {
 	font-family: 'Royal Crescent';
 	background-color: black;
+	background-image:url(../media/real_cf.png);
+	background-position:center center;
+	background-repeat:repeat;
 	color: white;
 	text-align: center;
 	padding-bottom:50px;
@@ -30,8 +35,14 @@ h1 {
 
 p {
 	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
 }
 
+h3 {
+	font-size: 1.25rem;
+}
+
+/* Nav bar */
 ul{
 	padding:0;
 	margin:0;
@@ -95,12 +106,13 @@ li a.active {
 	transition-duration: 0.2s;
 }
 
+/* Button */
 .bigButton {
 	background-color: black;
 	color: white;
-	border: 3px solid white;
+	border: 3px solid #666;
 	transition-duration: 0.2s;
-	font-size:1em;
+	font-size:1.5rem;
 	padding:0.5rem 1.5rem;
 	font-family: 'Royal Crescent';
 	align-self:center;
@@ -109,19 +121,23 @@ li a.active {
 .bigButton:hover {
 	background-color: white;
 	color: black;
+	border-color:#FFF;
 	transition-duration: 0.2s;
 	cursor: pointer;
 }
 
+/* Social Media Links */
 .socialMedia {
 	font-size: 2rem;
-	float: left;
+	text-align:center;
+	margin-bottom:1rem;
 }
 
 #facebook {
 	color: white;
 	transition-duration: 0.1s;
-	margin-left: 5px;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 #facebook:hover {
@@ -132,7 +148,8 @@ li a.active {
 #twitter {
 	color: white;
 	transition-duration: 0.1s;
-	margin-right: 5px;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 #twitter:hover {
@@ -140,8 +157,33 @@ li a.active {
 	transition-duration: 0.1s;
 }
 
+#instagram {
+	color: white;
+	transition-duration: 0.1s;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+#instagram:hover{
+	color: #E1306C;
+	transition-duration: 0.2s;
+}
+
+#youtube {
+	color: white;
+	transition-duration: 0.1s;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+#youtube:hover{
+	color: #FF0000;
+	transition-duration: 0.2s;
+}
+
 #logo {
-	width: 100%;
+	width: 120%;
+	margin-left:-10%;
 	transition-duration: 0.2s;
 }
 
@@ -149,6 +191,7 @@ li a.active {
 	color:#ff7978;
 }
 
+/* Form Styling */
 form{
 	max-width:1140px;
 	width:100%;
@@ -186,26 +229,99 @@ textarea {
 	vertical-align: top;
 }
 
-.page{
-	max-width:1140px;
-	width:100%;
-	margin:auto;
+/* Base Page Styling */
+.page {
+	max-width: 1140px;
+	width: 100%;
+	margin: auto;
 }
 
-/** Desktop Only **/
+.productBanner {
+	width: 60%;
+}
+
+/* Our Team Gallery */
+#aboutGallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	transition-duration: 0.2s;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.galleryItem {
+	border: solid 2px white;
+	padding: 2rem;
+	margin: .5rem;
+	width: 30%;
+	overflow-x: hidden;
+	background-color: black;
+	transition-duration: 0.2s;
+	position: relative;
+	bottom: 0;
+}
+
+.galleryItem:hover {
+	position: relative;
+	bottom: 5px;
+	transition: all 0.2s ease-in-out;
+	border: solid 3px white;
+}
+
+.galleryImg {
+	width: 80%;
+}
+
+/* Footer Styling */
+
+#footerLink {
+	position:absolute;
+  	top: 50%;
+  	transform:translateY(-50%);
+	right: 15px;
+	height:100%;
+}
+
+#footerLink > img{
+	height: 100%;
+	width: auto;
+}
+
+#jumpLink {
+	width: 10%;
+}
+
+.instaLink {
+	text-decoration: none;
+	color: #E1306C;
+	transition-duration: 0.2s;
+}
+
+.instaLink:hover {
+	color: white;
+}
+
+/* Desktop Only */
 @media (min-width: 768px){
 	.page > div{
 		width:60%;
 		margin:auto;
+		overflow-x:hidden;
 	}
 }
 
 #navigation > button.expand{
-	display:none;
+	display: none;
+	cursor: pointer;
 }
 
-/** Mobile Sizing **/
+/* Mobile Sizing */
 @media (max-width: 767px){
+	#aboutGallery {
+		overflow-x: hidden;
+	}
+
 	li a {
 		font-size: 1.25em;
 	}
@@ -216,16 +332,18 @@ textarea {
 		margin-right:15px;
 	}
 
-	body{
-		padding-top:30px;
+	body {
+		padding-top: 30px;
 	}
 
+	/* Mobile Navbar */
 	#navigation{
 		position: fixed;
 		top:0;
 		left:0;
 		right:0;
 		background-color:#000;
+		z-index: 1;
 	}
 
 	#navigation > button.expand{
@@ -265,6 +383,23 @@ textarea {
 	#navigation:not(.open) button.expand #closer,
 	#navigation.open button.expand #opener{
 		display:none;
+	}
+
+	.page > div{
+		overflow-x:hidden;
+	}
+
+	footer > a {
+		display: none;
+		transition-duration: 0.2s;
+	}
+
+	.galleryItem {
+		width: 80%;
+	}
+
+	.productBanner {
+		width: 80%;
 	}
 }
 
