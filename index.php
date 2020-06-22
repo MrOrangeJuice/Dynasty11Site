@@ -107,7 +107,6 @@ if (isset($_POST['submit'])) {
 			});
 		})();
 	</script>
-<!-- Lycrios Helped -->
 </body>
 
 </html>
