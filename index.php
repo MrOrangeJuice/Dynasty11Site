@@ -43,6 +43,13 @@ if (isset($_POST['submit'])) {
 		</button>
 		<ul class="nav-items">
 			<li><a href="/" class="home<?php if(!isset($_GET['page'])){ echo ' active'; } ?>">Home</a></li>
+			<?php /*<div id="productsNav">
+				<li><a href="/?page=products" class="products<?php if(isset($_GET['page']) && $_GET['page'] == 'products'){ echo ' active'; } ?>">Products</a></li>
+				<div id="dropDownItems">
+					<li><a href="/?page=products" class="dropdown">Player 2</a></li>
+					<li><a href="/?page=products" class="dropdown">>Project Stargazer</a></li>
+				</div>
+			</div>*/ ?>
 			<li><a href="/?page=products" class="products<?php if(isset($_GET['page']) && $_GET['page'] == 'products'){ echo ' active'; } ?>">Products</a></li>
 			<li><a href="/?page=about" class="about<?php if(isset($_GET['page']) && $_GET['page'] == 'about'){ echo ' active'; } ?>">About Us</a></li>
 			<li><a href="/?page=contact" class="contact<?php if(isset($_GET['page']) && $_GET['page'] == 'contact'){ echo ' active'; } ?>">Contact</a></li>
@@ -58,7 +65,7 @@ if (isset($_POST['submit'])) {
 				<div class="socialMedia">
 					<a href="https://www.facebook.com/dynasty11studios/"><i class="fab fa-facebook-f" id="facebook"></i></a>
 					<a href="https://www.instagram.com/dynasty11studios/"><i class="fab fa-instagram" id="instagram"></i></a>
-					<a href="https://www.facebook.com/dynasty11studios/"><i class="fab fa-twitter" id="twitter"></i></a>
+					<a href="https://twitter.com/Dynasty11Studio"><i class="fab fa-twitter" id="twitter"></i></a>
 					<a href="https://www.youtube.com/channel/UCcLl-49iQ79FBgYAeC8-r-w/featured"><i class="fab fa-youtube" id="youtube"></i></a>
 				</div>
 				<form action="/?page=contact">

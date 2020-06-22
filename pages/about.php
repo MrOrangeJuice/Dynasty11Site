@@ -38,7 +38,7 @@
 			<img src="media/portraits/Caroline.jpg" alt="Caroline" class="galleryImg">
 			<h3>Caroline Wood</h3>
 			<p>Illustrator and Graphic Artist</p>
-			<p>"I'm a vector illustrator." <a href="https://www.instagram.com/cwood_works/" class="instaLink">@cwood_works</a></p>
+			<p><a href="https://www.instagram.com/cwood_works/" class="instaLink">@cwood_works</a></p>
 		</div>
 		<div class="galleryItem">
 			<img src="media/portraits/veronica.jpg" alt="Veronica" class="galleryImg">
