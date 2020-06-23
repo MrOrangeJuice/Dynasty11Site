@@ -37,7 +37,7 @@
 		<div class="galleryItem">
 			<img src="media/portraits/Caroline.jpg" alt="Caroline" class="galleryImg">
 			<h3>Caroline Wood</h3>
-			<p>Illustrator and Graphic Artist</p>
+			<p>Vector Artist</p>
 			<p><a href="https://www.instagram.com/cwood_works/" class="instaLink">@cwood_works</a></p>
 		</div>
 		<div class="galleryItem">
@@ -52,14 +52,12 @@
 			<p>Composer</p>
 			<p>"Its kind of fun to do the impossible!" - Walt Disney</p>
 		</div>
-		<!--
 		<div class="galleryItem">
-			<img src="media/Raichu.PNG" alt="Raichu" class="galleryImg">
-			<h3>TBA</h3>
-			<p>TBA</p>
-			<p>Text goes here</p>
+			<img src="media/portraits/Reagan.JPG" alt="Reagan" class="galleryImg">
+			<h3>Reagan Herndon</h3>
+			<p>Concept Artist</p>
+			<p>"Don't let fear stop you from doing the thing you love." - Buster Moon</p>
 		</div>
-		-->
 	</div>
 
 	<h1>Our Partners</h1>
