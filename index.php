@@ -54,6 +54,11 @@ if (isset($_POST['submit'])) {
 			<li><a href="/?page=about" class="about<?php if(isset($_GET['page']) && $_GET['page'] == 'about'){ echo ' active'; } ?>">About Us</a></li>
 			<li><a href="/?page=contact" class="contact<?php if(isset($_GET['page']) && $_GET['page'] == 'contact'){ echo ' active'; } ?>">Contact</a></li>
 		</ul>
+		<?php /* 
+			<audio controls>
+				<source src="sounds/coin.mp3" type="audio/mpeg">
+			</audio>
+		*/ ?>
 	</nav>
 	<main>
 		<?php
