@@ -3,7 +3,7 @@
 	<?php
 	if(isset($_GET['thankyou'])){
 	?>
-	<h4>Thank you for contacting Dynasty11.</h4>
+	<h4>Thank you for contacting Dynasty 11.</h4>
 	<p>Your contact form has been submitted. We'll get back to you as soon as possible.</p>
 	<?php
 	}

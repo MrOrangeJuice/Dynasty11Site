@@ -17,13 +17,13 @@
 			<p>"Humanity will reach maturity and wisdom on the day that it begins not just to tolerate, but take a special delight in differences in ideas." - Gene Roddenberry</p>
 		</div>
 		<div class="galleryItem">
-			<img src="media/portraits/Juliana.JPG" alt="Juliana" class="galleryImg">
+			<img src="media/portraits/JulianaC.jpg" alt="Juliana" class="galleryImg">
 			<h3>Juliana Johnson</h3>
 			<p>COO</p>
 			<p>"We do not inherit the Earth from our ancestors, we borrow it from our children." - Native American Proverb</p>
 		</div>
 		<div class="galleryItem">
-			<img src="media/portraits/elizabeth.jpg" alt="Elizabeth" class="galleryImg">
+			<img src="media/portraits/ElizabethC.jpg" alt="Elizabeth" class="galleryImg">
 			<h3>Elizabeth Campbell</h3>
 			<p>CBDO</p>
 			<p>"Everyone you will ever meet knows something you don't."</p>
@@ -35,25 +35,25 @@
 			<p>"Sucking at something is the first step to being sorta good at something" - Jake the Dog</p>
 		</div>
 		<div class="galleryItem">
-			<img src="media/portraits/Caroline.jpg" alt="Caroline" class="galleryImg">
+			<img src="media/portraits/CarolineC.jpg" alt="Caroline" class="galleryImg">
 			<h3>Caroline Wood</h3>
 			<p>Vector Artist</p>
 			<p><a href="https://www.instagram.com/cwood_works/" class="instaLink">@cwood_works</a></p>
 		</div>
 		<div class="galleryItem">
-			<img src="media/portraits/veronica.jpg" alt="Veronica" class="galleryImg">
+			<img src="media/portraits/VeronicaC.jpg" alt="Veronica" class="galleryImg">
 			<h3>Veronica Restropo</h3>
 			<p>Social Media Director</p>
 			<p>“Be the CEO your parents wanted you to marry”</p>
 		</div>
 		<div class="galleryItem">
-			<img src="media/portraits/brian.jpg" alt="Brian" class="galleryImg">
+			<img src="media/portraits/BrianC.jpg" alt="Brian" class="galleryImg">
 			<h3>Brian Sanyshyn</h3>
 			<p>Composer</p>
 			<p>"Its kind of fun to do the impossible!" - Walt Disney</p>
 		</div>
 		<div class="galleryItem">
-			<img src="media/portraits/Reagan.JPG" alt="Reagan" class="galleryImg">
+			<img src="media/portraits/ReaganC.jpg" alt="Reagan" class="galleryImg">
 			<h3>Reagan Herndon</h3>
 			<p>Concept Artist</p>
 			<p>"Don't let fear stop you from doing the thing you love." - Buster Moon</p>

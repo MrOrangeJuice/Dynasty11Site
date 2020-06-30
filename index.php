@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
     $mailFrom = $_POST['mail'];
     $message = $_POST['message'];
 
-    $mailTo = "colinjohnson@dynasty11.com";
+    $mailTo = "alexparrotto@dynasty11.com";
     $headers = "From: ".$mailFrom;
     $txt = "You have received an e-mail from ".$name.".\n\n".$message;
 
@@ -30,6 +30,7 @@ if (isset($_POST['submit'])) {
 	<link rel="stylesheet" href="/css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/8f3dcde252.js" crossorigin="anonymous"></script>
 	<link rel="icon" type="image/png" href="media/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="media/favicon-16x16.png" sizes="16x16" />
@@ -39,18 +40,23 @@ if (isset($_POST['submit'])) {
 	<nav id="navigation" class="expand-lg">
 		<button class="expand">
 			<svg id="opener" width="16px" height="16px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-bars fa-w-14"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg>
-			<svg id="closer" width="16px" height="16px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" class="svg-inline--fa fa-times fa-w-11"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" class=""></path></svg>
+			<svg id="closer" width="16px" height="16px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" class="svg-inline--fa fa-times fa-w-11"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" class="" /></svg>
 		</button>
 		<ul class="nav-items">
 			<li><a href="/" class="home<?php if(!isset($_GET['page'])){ echo ' active'; } ?>">Home</a></li>
-			<?php /*<div id="productsNav">
-				<li><a href="/?page=products" class="products<?php if(isset($_GET['page']) && $_GET['page'] == 'products'){ echo ' active'; } ?>">Products</a></li>
-				<div id="dropDownItems">
-					<li><a href="/?page=products" class="dropdown">Player 2</a></li>
-					<li><a href="/?page=products" class="dropdown">>Project Stargazer</a></li>
-				</div>
-			</div>*/ ?>
-			<li><a href="/?page=products" class="products<?php if(isset($_GET['page']) && $_GET['page'] == 'products'){ echo ' active'; } ?>">Products</a></li>
+			<div id="productDiv">
+				<li>
+					<a href="/?page=player2" class="products<?php if(isset($_GET['page']) && $_GET['page'] == 'products'){ echo ' active'; } ?>"><span>Products</span><svg width="20px" height="20px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" class="" /></svg></a>
+					<div id="expand">
+						<a href="/?page=player2" class="player2<?php if(isset($_GET['page']) && $_GET['page'] == 'player2'){ echo ' active'; } ?>">Player 2</a>
+						<a href="/?page=stargazer" class="stargazer<?php if(isset($_GET['page']) && $_GET['page'] == 'stargazer'){ echo ' active'; } ?>">>Project Stargazer</a>
+					</div>
+				</li>
+			</div>
+			<div id="mobileexpand">
+				<li><a href="/?page=player2" class="player2<?php if(isset($_GET['page']) && $_GET['page'] == 'player2'){ echo ' active'; } ?>">Player 2</a></li><br>
+				<li><a href="/?page=stargazer" class="stargazer<?php if(isset($_GET['page']) && $_GET['page'] == 'stargazer'){ echo ' active'; } ?>">Project Stargazer</a></li>
+			</div>
 			<li><a href="/?page=about" class="about<?php if(isset($_GET['page']) && $_GET['page'] == 'about'){ echo ' active'; } ?>">About Us</a></li>
 			<li><a href="/?page=contact" class="contact<?php if(isset($_GET['page']) && $_GET['page'] == 'contact'){ echo ' active'; } ?>">Contact</a></li>
 		</ul>

@@ -95,6 +95,26 @@ li a.active {
 	transition-duration: 0.2s;
 }
 
+.player2 {
+	color: #ff6b2e;
+	transition-duration: 0.2s;
+}
+
+.player2:hover {
+	color: white;
+	transition-duration: 0.2s;
+}
+
+.stargazer {
+	color: #f03812;
+	transition-duration: 0.2s;
+}
+
+.stargazer:hover {
+	color: white;
+	transition-duration: 0.2s;
+}
+
 .contact {
 	color: #2c9fa2;
 	transition-duration: 0.2s;
@@ -105,6 +125,56 @@ li a.active {
 	color: white;
 	transition-duration: 0.2s;
 }
+
+#productDiv {
+	display: inline;
+	position: relative;
+}
+
+#productDiv li a{
+	display:inline-flex;
+	align-items:center;
+	justify-content:space-between;
+}
+
+#productDiv li a svg{
+	transition:transform 0.2s ease;
+	transform:rotate(0deg);
+}
+
+#productDiv li #expand {
+	position:absolute;
+	display:inline-flex;
+	flex-direction:column;
+	transition:transform 0.2s ease;
+	left: 0;
+    top: 100%;
+    transform: scaleY(0);
+	transform-origin: top center;
+	align-items:center;
+	justify-content:center;
+	font-size: 0.75em;
+	background-color: black;
+	border: 3px solid #666;
+}
+
+#productDiv li #expand a{
+	margin: 0;
+}
+
+#productDiv li:hover #expand {
+	
+	transform:scaleY(1);
+}
+
+#productDiv li:hover a svg{
+	transform:rotate(180deg);
+}
+
+#mobileexpand{
+	display: none;
+}
+
 
 /* Button */
 .bigButton {
@@ -238,6 +308,19 @@ textarea {
 
 .productBanner {
 	width: 60%;
+	transition-duration: 0.2s;
+	position: relative;
+	border: solid 2px white;
+}
+
+.productBanner:hover {
+	transition-duration: 0.2s;
+	border: solid 6px white;
+}
+
+.productPage {
+	margin-top: 50px;
+	z-index: -1;
 }
 
 /* Our Team Gallery */
@@ -270,7 +353,7 @@ textarea {
 }
 
 .galleryImg {
-	width: 80%;
+	width: 90%;
 }
 
 /* Footer Styling */
@@ -305,7 +388,7 @@ textarea {
 /* Desktop Only */
 @media (min-width: 768px){
 	.page > div{
-		width:60%;
+		width:70%;
 		margin:auto;
 		overflow-x:hidden;
 	}
@@ -327,9 +410,9 @@ textarea {
 	}
 
 	form > div{
-		width:calc(100% - 30px);
-		margin-left:15px;
-		margin-right:15px;
+		width: calc(100% - 30px);
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 
 	body {
@@ -396,10 +479,19 @@ textarea {
 
 	.galleryItem {
 		width: 80%;
+		padding: 1.5rem;
 	}
 
 	.productBanner {
 		width: 80%;
+	}
+
+	#productDiv {
+		display: none;
+	}
+
+	#mobileexpand {
+		display: inline;
 	}
 }
 
