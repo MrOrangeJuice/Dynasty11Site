@@ -323,6 +323,10 @@ textarea {
 	margin-top: 50px;
 }
 
+#jumpButton {
+	padding: 5px;
+}
+
 /* Our Team Gallery */
 #aboutGallery {
 	display: flex;

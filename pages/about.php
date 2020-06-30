@@ -61,5 +61,5 @@
 	</div>
 
 	<h1>Our Partners</h1>
-	<a href="https://www.jumpbuttonstudio.com/"><img src="media/jumpbutton.jpg" class="productBanner"></a>
+	<a href="https://www.jumpbuttonstudio.com/"><img src="media/jumpbutton.png" class="productBanner" id="jumpbutton"></a>
 </div>
