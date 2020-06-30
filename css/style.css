@@ -156,6 +156,7 @@ li a.active {
 	font-size: 0.75em;
 	background-color: black;
 	border: 3px solid #666;
+	z-index: 1;
 }
 
 #productDiv li #expand a{
@@ -313,14 +314,13 @@ textarea {
 	border: solid 2px white;
 }
 
-.productBanner:hover {
+.productBanner:hover, .productPage:hover {
 	transition-duration: 0.2s;
 	border: solid 6px white;
 }
 
 .productPage {
 	margin-top: 50px;
-	z-index: -1;
 }
 
 /* Our Team Gallery */
