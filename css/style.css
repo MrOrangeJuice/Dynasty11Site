@@ -36,6 +36,14 @@ h1 {
 p {
 	font-size: 1.5em;
 	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.productParagraph {
+	width: 80%;
+	margin-left: 10%;
 }
 
 h3 {
@@ -76,7 +84,7 @@ li a.active {
 }
 
 .about {
-	color: #feb914;
+	color: #ff90da;
 	transition-duration: 0.2s;
 }
 
@@ -106,7 +114,7 @@ li a.active {
 }
 
 .stargazer {
-	color: #6fcb9f;
+	color: #feb914;
 	transition-duration: 0.2s;
 }
 
@@ -335,13 +343,15 @@ textarea {
 	transition-duration: 0.2s;
 	overflow: hidden;
 	z-index: -1;
+	width: 100%;
+	margin: auto;
 }
 
 .galleryItem {
 	border: solid 2px white;
 	padding: 2rem;
 	margin: .5rem;
-	width: 30%;
+	width: 20%;
 	overflow-x: hidden;
 	background-color: black;
 	transition-duration: 0.2s;
@@ -354,6 +364,10 @@ textarea {
 	bottom: 5px;
 	transition: all 0.2s ease-in-out;
 	border: solid 3px white;
+}
+
+.galleryItem p {
+	text-align: center;
 }
 
 .galleryImg {
@@ -398,6 +412,13 @@ textarea {
 	}
 }
 
+/* Gallery Sizing */
+@media (max-width: 1000px){
+	.galleryItem {
+		width: 30%;
+	}
+}
+
 #navigation > button.expand{
 	display: none;
 	cursor: pointer;
@@ -407,6 +428,10 @@ textarea {
 @media (max-width: 767px){
 	#aboutGallery {
 		overflow-x: hidden;
+	}
+
+	#jumpButton {
+		width: 100%;
 	}
 
 	li a {
@@ -421,6 +446,10 @@ textarea {
 
 	body {
 		padding-top: 30px;
+	}
+
+	p {
+		text-align: center;
 	}
 
 	/* Mobile Navbar */
