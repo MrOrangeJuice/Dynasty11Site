@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
 		?>
 		<div class="page">
 			<div>
-				<img src="media/D11noloop_updated.gif" alt="Dynasty 11 Logo" id="logo">
+				<img src="media/d11_nomatte.gif" alt="Dynasty 11 Logo" id="logo">
 				<div class="socialMedia">
 					<a href="https://www.facebook.com/dynasty11studios/"><i class="fab fa-facebook-f" id="facebook"></i></a>
 					<a href="https://www.instagram.com/dynasty11studios/"><i class="fab fa-instagram" id="instagram"></i></a>

@@ -404,7 +404,7 @@ textarea {
 }
 
 /* Desktop Only */
-@media (min-width: 768px){
+@media (min-width: 768px) {
 	.page > div{
 		width:70%;
 		margin:auto;
@@ -413,7 +413,7 @@ textarea {
 }
 
 /* Gallery Sizing */
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
 	.galleryItem {
 		width: 30%;
 	}
