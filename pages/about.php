@@ -29,12 +29,6 @@
 			<p>"Everyone you will ever meet knows something you don't."</p>
 		</div>
 		<div class="galleryItem">
-			<img src="media/portraits/Emily.jpg" alt="Emily" class="galleryImg">
-			<h3>Emily Drabik-Stevens</h3>
-			<p>CMO</p>
-			<p>"You're only given a little spark of madness. You mustn't lose it." - Robin Williams</p>
-		</div>
-		<div class="galleryItem">
 			<img src="media/portraits/VeronicaC.jpg" alt="Veronica" class="galleryImg">
 			<h3>Veronica Restrepo</h3>
 			<p>Social Media Director</p>
@@ -61,7 +55,7 @@
 		<div class="galleryItem">
 			<img src="media/portraits/BrianC.jpg" alt="Brian" class="galleryImg">
 			<h3>Brian Sanyshyn</h3>
-			<p>Composer</p>
+			<p>Composer and Sound Designer</p>
 			<p>"It's kind of fun to do the impossible!" - Walt Disney</p>
 		</div>
 	</div>

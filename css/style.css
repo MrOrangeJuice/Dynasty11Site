@@ -403,9 +403,27 @@ textarea {
 	color: white;
 }
 
+#music {
+	position:absolute;
+  	transform:translateY(0%);
+	left: 15px;
+	height:100%;
+	border-radius: 0px;
+}
+
+#playlist {
+	list-style-none;
+}
+
+#playlist li a {
+	color: black;
+}
+
+#playlist
+
 /* Desktop Only */
 @media (min-width: 768px) {
-	.page > div{
+	.page > div {
 		width:70%;
 		margin:auto;
 		overflow-x:hidden;
@@ -416,6 +434,13 @@ textarea {
 @media (max-width: 1000px) {
 	.galleryItem {
 		width: 30%;
+	}
+}
+
+/* Music Sizing */
+@media (max-width: 1200px) {
+	#music {
+		display: none;
 	}
 }
 
